@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Installation</title>
+</head>
+
+<body>
+z3:
+<ul>
+<li> osx: <code>brew install z3</code>
+<li> ubuntu: <code>sudo apt-get install z3</code>
+<li> To build from source, follow instructions <a href="https://github.com/Z3Prover/z3">here</a>.
+</ul>
+dReal:
+<ul>
+<li> Follow instructions <a href="http://dreal.github.io/download/">here</a>.
+<li> Suppose you are using the dReal API in the file <code>test.cpp</code>. To compile:<br>
+osx: <code>g++ -std=c++11 test.cpp -I/usr/local/include/dreal -L/usr/local/lib/dreal -ldreal -libex -lnlopt -lcapd -lglpk -lprim -lClp -lCoinUtils -pthread</code><br>
+ubuntu: <code>g++ -std=c++11 -I/usr/include/dreal test.cpp -L/usr/lib/dreal -ldreal -libex -lnlopt -lcapd -lglpk -lprim -lClp -lCoinUtils -pthread</code>
+</ul>
+</body>
+
